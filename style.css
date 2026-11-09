@@ -1,0 +1,208 @@
+/* GENERAL STYLING */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f7f4;
+    color: #252525;
+    line-height: 1.6;
+}
+
+/* HEADER AND NAVIGATION */
+header {
+    background-color: #252525;
+    padding: 20px 5%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav ul a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* GENERAL SECTION STYLING */
+section {
+    padding: 70px 8%;
+}
+
+section h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+/* HERO SECTION */
+#home {
+    background-color: #e8e5dc;
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#home h1 {
+    font-size: 60px;
+    line-height: 1.2;
+}
+
+#home h2 {
+    font-size: 24px;
+    margin: 15px 0;
+}
+
+#home a {
+    display: inline-block;
+    background-color: #252525;
+    color: white;
+    padding: 12px 25px;
+    margin-top: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* ABOUT SECTION */
+#about {
+    background-color: white;
+}
+
+#about p {
+    max-width: 700px;
+}
+
+/* PROJECTS SECTION */
+#projects {
+    background-color: #f8f7f4;
+}
+
+#projects article {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+#projects article h3 {
+    margin-bottom: 10px;
+}
+
+/* CSS GRID */
+#projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+#projects h2 {
+    grid-column: 1 / -1;
+}
+
+/* SKILLS SECTION */
+#skills {
+    background-color: white;
+}
+
+#skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    list-style: none;
+}
+
+#skills li {
+    background-color: #e8e5dc;
+    padding: 12px 20px;
+    border-radius: 5px;
+}
+
+/* CONTACT SECTION */
+#contact form {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+input,
+textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font: inherit;
+}
+
+textarea {
+    min-height: 120px;
+}
+
+button {
+    background-color: #252525;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+    background-color: #252525;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 600px) {
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #home h1 {
+        font-size: 42px;
+    }
+
+    #home h2 {
+        font-size: 19px;
+    }
+
+    section {
+        padding: 50px 6%;
+    }
+
+    #projects {
+        grid-template-columns: 1fr;
+    }
+
+}
